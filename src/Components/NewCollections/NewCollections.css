@@ -1,0 +1,29 @@
+.newcollections {
+  padding: 40px 5%;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.newcollections h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #222;
+  font-weight: 600;
+}
+
+.newcollections hr {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #ff416c, #ff4b2b);
+  border: none;
+  margin: 0 auto 40px;
+  border-radius: 2px;
+}
+
+.collections {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* exactly 4 equal columns */
+  gap: 30px;
+  justify-content: center;
+  align-items: stretch;
+}

@@ -1,0 +1,98 @@
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 60px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-logo img {
+  width: 40px;
+  height: auto;
+}
+
+.nav-logo p {
+  font-size: 22px;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.nav-menu li:hover {
+  color: #007bff;
+}
+
+.nav-login-cart {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.nav-login-cart button {
+  padding: 8px 18px;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: transparent;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #007bff;
+  transition: all 0.3s ease;
+}
+
+.nav-login-cart button:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Wrap icon and badge */
+.nav-login-cart img {
+  width: 28px;
+  height: auto;
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-cart-count {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
