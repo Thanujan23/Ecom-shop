@@ -1,0 +1,106 @@
+/* ShopCategory.css */
+
+.shop-category {
+  width: 100%;
+  padding: 20px 5%;
+  background-color: #f9f9f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.shop-category > img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.shopcategory-indexsort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.shopcategory-indexsort p {
+  font-size: 16px;
+  color: #444;
+}
+
+.shopcategory-indexsort span {
+  font-weight: bold;
+  color: #222;
+}
+
+.shopcategory-sort {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  background-color: #fff;
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.shopcategory-sort:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.shopcategory-sort img {
+  width: 16px;
+  height: 16px;
+}
+
+.shopcategory-products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 items in a row */
+  gap: 25px;
+  padding-bottom: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .shopcategory-products {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .shopcategory-products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .shopcategory-products {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Load More Button - Centered and Professional */
+.shopcategory-loadmore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto 0;
+  padding: 12px 28px;
+  background-color: #1a1a1a;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  width: fit-content;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.shopcategory-loadmore:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+}

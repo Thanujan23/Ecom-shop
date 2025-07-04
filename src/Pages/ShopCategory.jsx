@@ -36,6 +36,11 @@ const ShopCategory = (props) => {
             return null;
           }
         })}
+
+
+      </div>
+      <div className="shopcategory-loadmore">
+        Explore More
       </div>
     </div>
   );
@@ -43,3 +48,5 @@ const ShopCategory = (props) => {
 
 
 export default ShopCategory;
+
+
